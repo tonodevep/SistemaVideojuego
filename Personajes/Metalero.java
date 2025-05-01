@@ -19,21 +19,18 @@ public class Metalero extends PersonajeFisico implements Defendible {
     // Implementación del método atacar (del interface Defendible)
     @Override
     public void atacar() {
-        System.out.println(nombre + " ataca con su guitarra " + guitarra + " y le quita un " + fuerza + " de daño ");
+        System.out.println(nombre + " ataca con su guitarra " + guitarra);
     }
 
     // Implementación del método defender (del interface Defendible)
     @Override
     public void defender() {
-        if (escudo) {  // Si tiene el escudo
             System.out.println(nombre + " se defiende tocando Slayer");
-        } else {  // Si no tiene el escudo
-            System.out.println(nombre + " no tiene la guitarra afinada para defenderse");
-        }
     }
 
     // Método adicional exclusivo de Metalero para tocar guitarra
     public void tocarGuitarra() {
+        if()
         System.out.println(nombre + " está tocando un solo con su " + guitarra);
     }
 }
