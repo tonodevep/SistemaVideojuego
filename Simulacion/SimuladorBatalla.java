@@ -1,3 +1,4 @@
+package Simulacion;
 import Interfaces.*;
 import Personajes.*;
 import Personajes.base.*;
