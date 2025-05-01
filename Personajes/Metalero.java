@@ -1,3 +1,4 @@
+package Personajes;
 import Interfaces.Defendible;
 
 public class Metalero extends PersonajeFisico implements Defendible {
