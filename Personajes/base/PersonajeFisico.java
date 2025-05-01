@@ -1,3 +1,4 @@
+package Personajes.base;
 public abstract class PersonajeFisico extends Personaje {
     protected int fuerza;
 
