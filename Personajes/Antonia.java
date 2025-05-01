@@ -1,4 +1,5 @@
 package Personajes;
+import Personajes.base.PersonajeMagico;
 import Interfaces.Magico;
 import Interfaces.Curable;
 
