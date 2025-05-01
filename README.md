@@ -51,7 +51,7 @@ Este proyecto tiene como objetivo el desarrollo de la lógica de personajes para
    - **Ladrador** 🐕 → 'alarido()'
    - **Mordedor** 🐾 → 'morder()'
 
-### 5. **Clase `Juego`**
+### 5. **Clase 'Juego'**
    - **Atributo**: Lista de personajes ('ArrayList<Personaje>').
    - **Método**: 'mostrarAcciones()' que recorre la lista de personajes, invoca el método 'atacar()' y usa 'instanceof' para ejecutar habilidades adicionales basadas en las interfaces implementadas por cada personaje.
 
@@ -59,7 +59,7 @@ Este proyecto tiene como objetivo el desarrollo de la lógica de personajes para
    - Crea instancias de los personajes ('Metalero', 'Antonia', 'Policia', 'Mutante') y los añade al juego.
    - Llama al método 'mostrarAcciones()' para ejecutar las acciones de los personajes.
 
-### 7. **Clase 'Batalla'**
+### 7. **Clase 'SimuladorBatalla'**
    - Simula un combate entre personajes. Este paso es valorado positivamente si se incluye en el proyecto.
 
 ## Autores
