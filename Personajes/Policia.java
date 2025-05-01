@@ -1,5 +1,6 @@
 package Personajes;
 import Interfaces.Pistolero;
+import Personajes.base.PersonajeFisico;
 
 public class Policia extends PersonajeFisico implements Pistolero {
     
