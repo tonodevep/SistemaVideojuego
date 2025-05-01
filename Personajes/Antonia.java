@@ -10,8 +10,8 @@ public class Antonia extends PersonajeMagico implements Magico, Curable {
     private String rosario; // Atributo propio de Antonia
 
     // Constructor de la clase que inicializa los atributos
-    public Antonia(String nombre, int nivel, double salud, int mana, String rosario) {
-        super(nombre, nivel, salud, mana); // Llama al constructor de la clase base
+    public Antonia(String nombre, int nivel, double salud, int mana, int fuerza, String rosario) {
+        super(nombre, nivel, salud, mana, fuerza); // Llama al constructor de la clase base
         this.rosario = rosario;
     }
 
@@ -46,3 +46,4 @@ public class Antonia extends PersonajeMagico implements Magico, Curable {
         mana += 5; // Rezar aumenta el mana
     }
 }
+
