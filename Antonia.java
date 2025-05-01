@@ -1,3 +1,6 @@
+import Interfaces.Magico;
+import Interfaces.Curable;
+
 public class Antonia extends PersonajeMagico implements Magico, Curable {
     private String rosario;
 
