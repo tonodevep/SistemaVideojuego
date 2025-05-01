@@ -30,5 +30,10 @@ public abstract class PersonajeMagico extends Personaje {
     public void setMana(int mana) { 
         this.mana = mana; 
     }
+
+    //Getter para obtener el valor de fuerza
+    public int getFuerza() { 
+        return fuerza; 
+    }
 }
 
