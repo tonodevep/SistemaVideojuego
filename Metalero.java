@@ -1,3 +1,5 @@
+import Interfaces.Defendible;
+
 public class Metalero extends PersonajeFisico implements Defendible {
     private String guitarra;
     private boolean escudo;
