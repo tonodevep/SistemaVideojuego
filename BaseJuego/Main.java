@@ -1,3 +1,4 @@
+package BaseJuego;
 // Importa todas las clases del paquete 'Personajes'
 import Personajes.*;
 
