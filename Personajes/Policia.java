@@ -7,11 +7,12 @@ import Personajes.base.PersonajeFisico;
 // Define la clase Policia, que extiende PersonajeFisico e implementa la interfaz Pistolero
 public class Policia extends PersonajeFisico implements Pistolero {
     
-    private int balas = 2; // Atributo que guarda el número de balas que tiene el policía
+    private int balas; // Atributo que guarda el número de balas que tiene el policía
 
     // Constructor de la clase Policia, inicializa los atributos
-    public Policia(String nombre, int nivel, double salud, int fuerza) {
+    public Policia(String nombre, int nivel, double salud, int fuerza, int balas) {
         super(nombre, nivel, salud, fuerza); // Llama al constructor de la clase base (PersonajeFisico)
+        this.balas = balas;
     }
 
     // Implementación del método atacar (del interface Pistolero)
@@ -30,6 +31,10 @@ public class Policia extends PersonajeFisico implements Pistolero {
             System.out.println("Al policia " + nombre + " no le quedan balas");
             System.out.println(nombre + " pierde su turno");  // El policía pierde su turno por falta de balas
         }
+    }
+    //Getter sobre la cantidad de balas
+    public int getBalas() { 
+        return balas; 
     }
 }
 
