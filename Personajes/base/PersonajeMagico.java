@@ -1,3 +1,5 @@
+package Personajes.base;
+
 public abstract class PersonajeMagico extends Personaje {
     protected int mana;
 
