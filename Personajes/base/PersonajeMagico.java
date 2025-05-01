@@ -1,27 +1,34 @@
-package Personajes.base; // Define el paquete donde se encuentra esta clase
-
-// Clase abstracta que extiende Personaje, especializada en personajes mágicos
+// Clase abstracta que hereda de Personaje, representando a un personaje mágico
 public abstract class PersonajeMagico extends Personaje {
-    protected int mana; // Atributo que representa el mana del personaje mágico
+    
+    // Atributo para almacenar la cantidad de mana del personaje
+    protected int mana;
+    
+    // Atributo privado para almacenar la fuerza del personaje
+    private int fuerza;
 
-    // Constructor de la clase PersonajeMagico, inicializa los atributos heredados y el propio mana
-    public PersonajeMagico(String nombre, int nivel, double salud, int mana) {
-        super(nombre, nivel, salud); // Llama al constructor de la clase base Personaje
-        this.mana = mana; // Inicializa el mana del personaje mágico
+    // Constructor de la clase, que inicializa el nombre, nivel, salud, mana y fuerza del personaje
+    public PersonajeMagico(String nombre, int nivel, double salud, int mana, int fuerza) {
+        // Llamada al constructor de la clase base (Personaje) para inicializar nombre, nivel y salud
+        super(nombre, nivel, salud);
+        this.mana = mana;  // Inicializa mana
+        this.fuerza = fuerza;  // Inicializa fuerza
     }
 
-    // Método no abstracto que permite al personaje mágico meditar y recuperar mana
+    // Método no abstracto que permite al personaje meditar y recuperar mana
     public void meditar() {
         System.out.println(nombre + " está meditando para recuperar mana");
-        this.mana += 10; // Recupera 10 puntos de mana
+        this.mana += 10;  // Recupera 10 puntos de mana
     }
 
-    // Métodos getter y setter para el mana
-    public int getMana() {
-        return mana; // Devuelve el valor de mana del personaje mágico
+    // Getter para obtener el valor de mana
+    public int getMana() { 
+        return mana; 
     }
 
-    public void setMana(int mana) {
-        this.mana = mana; // Establece el valor de mana del personaje mágico
+    // Setter para establecer el valor de mana
+    public void setMana(int mana) { 
+        this.mana = mana; 
     }
 }
+
