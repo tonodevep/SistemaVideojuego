@@ -1,3 +1,4 @@
+package Personajes.base;
 import java.util.Objects;
 
 public abstract class Personaje {
