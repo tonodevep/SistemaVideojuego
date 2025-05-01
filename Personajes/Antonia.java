@@ -1,3 +1,4 @@
+package Personajes;
 import Interfaces.Magico;
 import Interfaces.Curable;
 
