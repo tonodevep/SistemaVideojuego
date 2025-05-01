@@ -18,7 +18,12 @@ public class Antonia extends PersonajeMagico implements Magico, Curable {
     // Implementación del método atacar
     @Override
     public void atacar() {
+        if(mana > 5){
         System.out.println(nombre + " lanza un ataque mágico con su rosario " + rosario);
+        mana -= 5; // Resta 5 de mana al atacar
+    }else{
+        System.out.println(nombre + " no tiene suficiente mana para atacar");
+        }
     }
 
     // Implementación del método lanzarHechizo
