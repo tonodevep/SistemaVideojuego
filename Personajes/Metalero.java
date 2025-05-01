@@ -1,4 +1,5 @@
 package Personajes;
+import Personajes.base.PersonajeFisico;
 import Interfaces.Defendible;
 
 public class Metalero extends PersonajeFisico implements Defendible {
