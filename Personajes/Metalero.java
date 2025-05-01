@@ -1,19 +1,18 @@
 package Personajes; // Define el paquete donde se encuentra esta clase
 
 // Importa las clases y interfaces necesarias
-import Personajes.base.PersonajeFisico;
+import Personajes.base.PersonajeMagico;
 import Interfaces.Defendible;
+import Interfaces.Magico;
 
-// Define la clase Metalero, que extiende PersonajeFisico e implementa Defendible
-public class Metalero extends PersonajeFisico implements Defendible {
+// Define la clase Metalero, que extiende PersonajeMagico e implementa Defendible y Mágico
+public class Metalero extends PersonajeMagico implements Defendible, Magico {
     private String guitarra;  // Atributo para la guitarra del metalero
-    private boolean escudo;   // Atributo para saber si tiene el escudo activo
-
+ 
     // Constructor de la clase Metalero, inicializa los atributos
-    public Metalero(String nombre, int nivel, double salud, int fuerza, String guitarra) {
-        super(nombre, nivel, salud, fuerza); // Llama al constructor de la clase base (PersonajeFisico)
+    public Metalero(String nombre, int nivel, double salud, int fuerza, int mana, String guitarra) {
+        super(nombre, nivel, salud, fuerza, mana); // Llama al constructor de la clase base (PersonajeFisico)
         this.guitarra = guitarra;  // Inicializa la guitarra
-        this.escudo = true;        // Inicializa el escudo como activo
     }
 
     // Implementación del método atacar (del interface Defendible)
@@ -29,9 +28,15 @@ public class Metalero extends PersonajeFisico implements Defendible {
     }
 
     // Método adicional exclusivo de Metalero para tocar guitarra
-    public void tocarGuitarra() {
-        if()
-        System.out.println(nombre + " está tocando un solo con su " + guitarra);
+    @Override
+    public void lanzarHechizo() {
+        if(mana > 15){
+            System.out.println(nombre + " está tocando un solo con su " + guitarra);
+            mana -= 15;
+        } else {
+            System.out.println("Su guitarra está desafinada, pierde el turno");
+        }
     }
 }
+
 
