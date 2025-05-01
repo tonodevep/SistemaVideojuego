@@ -41,7 +41,6 @@ public class Antonia extends PersonajeMagico implements Magico, Curable {
     @Override
     public void curar() {
         System.out.println(nombre + " usa su poder curativo");
-        salud += 20; // Suma salud
         mana -= 5;   // Resta algo de mana
     }
 
