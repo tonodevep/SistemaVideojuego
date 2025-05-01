@@ -16,18 +16,18 @@ public class Mutante extends PersonajeFisico implements Ladrador, Mordedor {
     // Implementación del método atacar (del interface Ladrador)
     @Override
     public void atacar() {
-        System.out.println("El mutante " + nombre + " ataca, quitando " + fuerza + " de daño ");
+        System.out.println("El mutante " + nombre + " ataca");
     }
 
     // Implementación del método alarido (del interface Ladrador)
     @Override
     public void alarido() {
-        System.out.println("El mutante " + nombre + " suelta un gran graznido, lo que provoca daño en área quitando " + fuerza + " de daño ");
+        System.out.println("El mutante " + nombre + " suelta un gran graznido, lo que provoca daño en área");
     }
 
     // Implementación del método morder (del interface Mordedor)
     @Override
     public void morder() {
-        System.out.println("El mutante " + nombre + " muerde, quitando " + fuerza + " de daño ");
+        System.out.println("El mutante " + nombre + " muerde");
     }
 }
