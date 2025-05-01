@@ -1,3 +1,4 @@
+package Personajes;
 import Interfaces.Pistolero;
 
 public class Policia extends PersonajeFisico implements Pistolero {
