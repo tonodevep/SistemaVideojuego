@@ -17,14 +17,14 @@ public class Policia extends PersonajeFisico implements Pistolero {
     // Implementación del método atacar (del interface Pistolero)
     @Override
     public void atacar() {
-        System.out.println("El policia " + nombre + " ataca con su cuchillo quitando " + fuerza + " de daño ");
+        System.out.println("El policia " + nombre + " ataca con su cuchillo");
     }
 
     // Implementación del método disparar (del interface Pistolero)
     @Override
     public void disparar() {
         if (balas > 0) {  // Si el policía tiene balas
-            System.out.println("El policia " + nombre + " dispara con su pistola al enemigo y le quita " + fuerza + " de daño");
+            System.out.println("El policia " + nombre + " dispara con su pistola al enemigo");
             balas--;  // Resta una bala después de disparar
         } else {  // Si no tiene balas
             System.out.println("Al policia " + nombre + " no le quedan balas");
