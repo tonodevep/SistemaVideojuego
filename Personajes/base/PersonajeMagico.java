@@ -1,3 +1,4 @@
+package Personajes.base;
 // Clase abstracta que hereda de Personaje, representando a un personaje mágico
 public abstract class PersonajeMagico extends Personaje {
     
