@@ -1,4 +1,3 @@
-package BaseJuego;
 // Importa todas las interfaces necesarias del paquete 'Interfaces'
 import Interfaces.*;
 
