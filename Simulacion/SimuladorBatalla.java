@@ -37,16 +37,16 @@ public class SimuladorBatalla {
                 
                 switch (accionMetalero) {
                     case 1:
-                        System.out.println(metalero.getNombre + ": Nos vemos en el Infierno!");
+                        System.out.println(metalero.getNombre() + ": Nos vemos en el Infierno!");
                         metalero.atacar();
                         mutante.setSalud(mutante.getSalud() - ((int)Math.random() * (15 - 20) + metalero.getFuerza()));
                         break;
                     case 2:
-                         System.out.println(metalero.getNombre + ": Tu ataque no es tan poderoso como un riff de Slayer! No puedes vencer el poder del thrash!");
+                         System.out.println(metalero.getNombre() + ": Tu ataque no es tan poderoso como un riff de Slayer! No puedes vencer el poder del thrash!");
                         ((Defendible)metalero).defender(); // Uso explícito de la interfaz
                         break;
                     case 3:
-                        System.out.println(metalero.getNombre + ": Escucha como suena mi GUITARRA!!!");
+                        System.out.println(metalero.getNombre() + ": Escucha como suena mi GUITARRA!!!");
                         metalero.lanzarHechizo();
                         mutante.setSalud(mutante.getSalud() - ((int)Math.random() * (13 - 25) + metalero.getFuerza()));
                         break;
@@ -67,12 +67,12 @@ public class SimuladorBatalla {
                 
                 switch (accionAntonia) {
                     case 1:
-                        System.out.println(antonia.getNombre + ": Nos vemos mañana si Dios quiere!");
+                        System.out.println(antonia.getNombre() + ": Nos vemos mañana si Dios quiere!");
                         antonia.atacar();
                         mutante.setSalud(mutante.getSalud() - ((int)Math.random() * (7 - 14) + antonia.getFuerza()));
                         break;
                     case 2:
-                        System.out.println(antonia.getNombre + ": Un Resplandor y hace... PAUM. Ya está aquí la Guerra");
+                        System.out.println(antonia.getNombre() + ": Un Resplandor y hace... PAUM. Ya está aquí la Guerra");
                         ((Magico)antonia).lanzarHechizo(); // Uso explícito de la interfaz
                         mutante.setSalud(mutante.getSalud() - ((int)Math.random() * (10 - 17) + antonia.getFuerza()));
                         break;
@@ -82,7 +82,7 @@ public class SimuladorBatalla {
                         System.out.println("2. " + policia.getNombre());
                         System.out.print("3. " + antonia.getNombre() + " se cura a sí misma");
                         accionAntonia = scanner.nextInt();
-                        System.out.println(antonia.getNombre + ": Que la Virgen te cubra con su manto y te sane, hijo mío");
+                        System.out.println(antonia.getNombre() + ": Que la Virgen te cubra con su manto y te sane, hijo mío");
                         ((Curable)antonia).curar(); // Uso explícito de la interfaz
                         switch (accionAntonia) {
                             case 1:
@@ -102,7 +102,7 @@ public class SimuladorBatalla {
                         }
                         break;
                     case 4:
-                        System.out.println(antonia.getNombre + ": Es hora de rezar el Rosario: Primer Misterio: La Pasión de Nuestro Señor...");
+                        System.out.println(antonia.getNombre() + ": Es hora de rezar el Rosario: Primer Misterio: La Pasión de Nuestro Señor...");
                         antonia.rezar();
                         break;
                     default:
@@ -120,12 +120,12 @@ public class SimuladorBatalla {
                 
                 switch (accionPolicia) {
                     case 1:
-                        System.out.println(policia.getNombre + ": Es hora de acabar con esto... No dejaré que nadie más sufra.");
+                        System.out.println(policia.getNombre() + ": Es hora de acabar con esto... No dejaré que nadie más sufra.");
                         policia.atacar();
                         mutante.setSalud(mutante.getSalud() - ((int)Math.random() * (8 - 12) + policia.getFuerza()));
                         break;
                     case 2:
-                        System.out.println(policia.getNombre + ": No me lo piensaré dos veces... TRAGA PLOMO!");
+                        System.out.println(policia.getNombre() + ": No me lo piensaré dos veces... TRAGA PLOMO!");
                         ((Pistolero)policia).disparar(); // Uso explícito de la interfaz
                         mutante.setSalud(mutante.getSalud() - ((int)Math.random() * (20 - 23) + policia.getFuerza()));
                         break;
@@ -155,13 +155,13 @@ public class SimuladorBatalla {
             
             switch (accionMutante) {
                 case 1:
-                    System.out.println(mutante.getNombre + ": UHGHGHHGHH!");
+                    System.out.println(mutante.getNombre() + ": UHGHGHHGHH!");
                     mutante.atacar();
                     objetivo.setSalud(objetivo.getSalud() - ((int)Math.random() * (10 - 14) + mutante.getFuerza()));
                     System.out.println(mutante.getNombre() + " ha atacado a " + objetivo.getNombre());
                     break;
                 case 2:
-                    System.out.println(mutante.getNombre + ": RAAAAAFFF!!!");
+                    System.out.println(mutante.getNombre() + ": RAAAAAFFF!!!");
                     ((Ladrador)mutante).alarido(); // Uso explícito de la interfaz
                     for (Personaje heroe : heroesVivos) {
                         heroe.setSalud(heroe.getSalud() - ((int)Math.random() * (2 - 5) + mutante.getFuerza()));
@@ -169,7 +169,7 @@ public class SimuladorBatalla {
                     System.out.println(mutante.getNombre() + " usa ataque de área contra todos los héroes!");
                     break;
                 case 3:
-                    System.out.println(mutante.getNombre + ": ARFFFF!");
+                    System.out.println(mutante.getNombre() + ": ARFFFF!");
                     ((Mordedor)mutante).morder(); // Uso explícito de la interfaz
                     objetivo.setSalud(objetivo.getSalud() - ((int)Math.random() * (18 - 22) + mutante.getFuerza()));
                     System.out.println(mutante.getNombre() + " ha mordido a " + objetivo.getNombre());
