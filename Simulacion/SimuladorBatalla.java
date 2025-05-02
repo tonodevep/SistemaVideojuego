@@ -31,7 +31,7 @@ public class SimuladorBatalla {
                 System.out.println("\nAcciones para " + metalero.getNombre() + " (Salud: " + metalero.getSalud() + "):" + " (Mana: " + metalero.getMana() + "):");
                 System.out.println("1. Atacar con su guitarra");
                 System.out.println("2. Defender");
-                System.out.println("3. Tocar guitarra (recupera energía)");
+                System.out.println("3. Tocar guitarra");
                 System.out.print("Elige una acción: ");
                 int accionMetalero = scanner.nextInt();
                 
